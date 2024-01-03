@@ -8,7 +8,7 @@ long double s21_cos(double x) {
   add_value = 1;
   i = 1;
 
-  while (add_value > 1e-6 || add_value < -1e-6) {
+  while (add_value > s21_EPS || add_value < -s21_EPS) {
     add_value *= (-1) * x * x / ((2 * i - 1) * (2 * i));
     rezult += add_value;
     i++;

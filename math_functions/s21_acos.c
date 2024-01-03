@@ -14,9 +14,9 @@ long double s21_acos(double x) {
     rezult = s21_NAN;
   else {
     if (x > 0 && x < 1)
-      rezult = s21_atan(sqrt(1 - pow(x, 2)) / x);
+      rezult = s21_atan(s21_sqrt(1 - s21_pow(x, 2)) / x);
     else if (x > -1 && x < 0)
-      rezult = s21_PI + s21_atan(sqrt(1 - pow(x, 2)) / x);
+      rezult = s21_PI + s21_atan(s21_sqrt(1 - s21_pow(x, 2)) / x);
   }
 
   return rezult;

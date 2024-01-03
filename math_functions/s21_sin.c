@@ -8,8 +8,8 @@ long double s21_sin(double x) {
   add_value = x;
   i = 0;
 
-  while (add_value > 1e-6 || add_value < -1e-6) {
-    add_value *= (-1) * pow(x, 2) / ((2 * i + 2) * (2 * i + 3));
+  while (add_value > s21_EPS || add_value < -s21_EPS) {
+    add_value *= (-1) * s21_pow(x, 2) / ((2 * i + 2) * (2 * i + 3));
     rezult += add_value;
     i++;
   }
