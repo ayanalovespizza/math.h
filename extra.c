@@ -1,15 +1,12 @@
 #include "s21_math.h"
 
 long double s21_factorial(int x) {
-  long double rezult = 0;
   if (x < 0)
-    rezult = 0;
+    return 0;
   else if (x == 0)
-    rezult = 1;
+    return 1;
   else
-    rezult = x * s21_factorial(x - 1);
-
-  return rezult;
+    return x * s21_factorial(x - 1);
 }
 
 long long int s21_int_pow(int base, int exp) {

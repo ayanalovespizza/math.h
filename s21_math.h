@@ -29,12 +29,12 @@ long double s21_fmod(double x, double y);  // DONE
 long double s21_exp(double x);  // DONE
 long double s21_log(double x);  // DONE
 
-long double s21_cos(double x);  // MAYBE
-long double s21_sin(double x);  // MAYBE
-long double s21_tan(double x);  // MAYBE
+long double s21_cos(double x);  // DONE
+long double s21_sin(double x);  // DONE
+long double s21_tan(double x);  // DONE
 
-long double s21_acos(double x);  // MAYBE
-long double s21_asin(double x);  // MAYBE
-long double s21_atan(double x);  // MAYBE
+long double s21_acos(double x);  // DONE
+long double s21_asin(double x);  // DONE
+long double s21_atan(double x);  // DONE
 
 #endif
