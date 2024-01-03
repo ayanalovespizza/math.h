@@ -12,7 +12,7 @@ long double s21_sqrt(double x) {
   else if (x == s21_INFINITY)
     rezult = s21_INFINITY;
   else {
-    for (int i = 0; i < 5000; i++) {
+    for (int i = 0; i < 500; i++) {
       rezult = 0.5 * (near_rezult + x / near_rezult);
       near_rezult = rezult;
     }

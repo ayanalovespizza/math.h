@@ -18,11 +18,13 @@ long double s21_atan(double x) {
     int in_range = (x > -1 && x < 1);
 
     if (in_range) {
-      for (int i = 0; i < 2000; i++)
-        rezult += (s21_pow(-1, i) * s21_pow(x, 2 * i + 1)) / (2 * i + 1);
+      for (int i = 0; i < 1500; i++)
+        rezult +=
+            (s21_pow_int(-1, i) * s21_pow_int(x, 2 * i + 1)) / (2 * i + 1);
     } else {
-      for (int i = 0; i < 2000; i++)
-        rezult += (s21_pow(-1, i) * s21_pow(x, -2 * i - 1)) / (2 * i + 1);
+      for (int i = 0; i < 1500; i++)
+        rezult +=
+            (s21_pow_int(-1, i) * s21_pow_int(x, -2 * i - 1)) / (2 * i + 1);
       rezult = (s21_PI * s21_fabs(x) / (2 * x)) - rezult;
     }
   }

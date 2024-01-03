@@ -12,7 +12,7 @@ long double s21_log(double x) {
   else if (x < 0 || x != x)
     rezult = s21_NAN;
   else {
-    for (int i = 0; i < 5000; i++) {
+    for (int i = 0; i < 500; i++) {
       rezult = near_rezult +
                2 * (x - s21_exp(near_rezult)) / (x + s21_exp(near_rezult));
       near_rezult = rezult;

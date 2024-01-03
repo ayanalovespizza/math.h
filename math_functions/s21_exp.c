@@ -12,7 +12,7 @@ long double s21_exp(double x) {
     rezult = s21_NAN;
 
   else {
-    while (s21_fabs(add_value) > s21_EPS) {
+    while (s21_fabs(add_value) > 1e-17) {
       add_value *= x / i;
       i += 1;
       rezult += add_value;

@@ -1,5 +1,6 @@
 #include <check.h>
 #include <math.h>
+#include <stdlib.h>
 
 #include "s21_math.h"
 
@@ -887,12 +888,12 @@ Suite *math_suite() {
 
   TCase *asin_tests = tcase_create("ASIN");
   suite_add_tcase(s1, asin_tests);
-  tcase_add_test(sin_tests, asin_test1);
-  tcase_add_test(sin_tests, asin_test2);
-  tcase_add_test(sin_tests, asin_test3);
-  tcase_add_test(sin_tests, asin_test4);
-  tcase_add_test(sin_tests, asin_test5);
-  tcase_add_test(sin_tests, asin_test6);
+  tcase_add_test(asin_tests, asin_test1);
+  tcase_add_test(asin_tests, asin_test2);
+  tcase_add_test(asin_tests, asin_test3);
+  tcase_add_test(asin_tests, asin_test4);
+  tcase_add_test(asin_tests, asin_test5);
+  tcase_add_test(asin_tests, asin_test6);
 
   TCase *atan_tests = tcase_create("ATAN");
   suite_add_tcase(s1, atan_tests);
